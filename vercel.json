@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "CRUD-APP-backend",
+    "name": "backend",
     "builds": [
       {
         "src": "index.js",
@@ -13,7 +13,7 @@
         "dest": "/index.js",
         "methods": [
           "GET",
-          "POST"
+          "POST","PUT","PATCH","DELETE"
         ]
       }
     ]
