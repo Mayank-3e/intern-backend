@@ -41,8 +41,8 @@ app.post('/order',({body},res)=>
     orders.push({id: orders.length, ...body})
     if(orders.length%n===0)
     {
-        const coupon=Math.round(Math.random()*1e10).toString()
-        coupons.push({id: coupons.length, coupon})
+        const coupon=Math.round(Math.random()*1e10)
+        coupons.push({id: coupon, coupon: coupon.toString()})
     }
     res.json({success: "Success"})
 })
